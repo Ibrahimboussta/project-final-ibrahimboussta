@@ -121,7 +121,7 @@
     .bg1
         background: blue
         opacity: 50%
-        
+
     .icon1
         border: 2px solid
         border-radius: 100%
@@ -145,45 +145,71 @@
         background-color: blue
         opacity: 75%
 
-
 @media (max-width: 426px )
     body
         margin: 0
         padding: 0
-        .text_carousel1
-            display: flex
-            padding: 50px
-            width: 100vw
-            height: 10vh
-        .div1-sec2
-            display: flex
-            align-items: center
-            .heading2
-                font-size: 20px
-                padding: 10px
-                width: 70vw
-                display: flex
-                flex-direction: column
-                align-items: center
-            .para2
-                width: 100vw
-        .div2-sec2
+        .img1
+            width: 100%
+            background-size: cover
+            background-position: calc( 100% - 40% )
+        .para1
+            width: 100% !important
+            margin-left: 10px
+        .btn2
+            width: 100% !important
+            margin-left: 10px
+        .img2
+            width: 100%
+            background-size: cover
+            background-position: calc( 100% - 40% )
+        .para1
+            width: 100% !important
+            margin-left: 10px
+        .btn2
+            width: 100% !important
+            margin-left: 10px
+
+        .img3
+            width: 100%
+            background-size: cover
+            background-position: calc( 100% - 40% )
+        .para1
+            width: 100% !important
+            margin-left: 10px
+        .btn2
+            width: 100% !important
+            margin-left: 10px
+
+    .div1-sec2
+        display: flex
+        align-items: center
+        .heading2
+            font-size: 20px
+            padding: 10px
+            width: 70vw
             display: flex
             flex-direction: column
             align-items: center
-            justify-content: space-evenly
+            .para2
+                width: 100vw
+    .div2-sec2
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        width: 100%
+        position: relative
+        &::before
+            display: none
+        .child-div
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
             width: 100%
-            position: relative
-            &::before
-                display: none
-            .child-div
-                display: flex
-                align-items: center
-                justify-content: center
-                flex-direction: column
-                width: 100%
-                p
-                    width: 80%
+            p
+                width: 80%
 
 //     &::before
 //         display: none
@@ -200,6 +226,4 @@
 
 // .cnt1
 //     width: 100% 
-.img00
-    width: 90%
 

@@ -11996,17 +11996,50 @@ textarea.form-control-lg {
     margin: 0;
     padding: 0;
   }
-  body .text_carousel1 {
-    display: flex;
-    padding: 50px;
-    width: 100vw;
-    height: 10vh;
+  body .img1 {
+    width: 100%;
+    background-size: cover;
+    background-position: 60%;
   }
-  body .div1-sec2 {
+  body .para1 {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+  body .btn2 {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+  body .img2 {
+    width: 100%;
+    background-size: cover;
+    background-position: 60%;
+  }
+  body .para1 {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+  body .btn2 {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+  body .img3 {
+    width: 100%;
+    background-size: cover;
+    background-position: 60%;
+  }
+  body .para1 {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+  body .btn2 {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+  .div1-sec2 {
     display: flex;
     align-items: center;
   }
-  body .div1-sec2 .heading2 {
+  .div1-sec2 .heading2 {
     font-size: 20px;
     padding: 10px;
     width: 70vw;
@@ -12014,10 +12047,10 @@ textarea.form-control-lg {
     flex-direction: column;
     align-items: center;
   }
-  body .div1-sec2 .para2 {
+  .div1-sec2 .heading2 .para2 {
     width: 100vw;
   }
-  body .div2-sec2 {
+  .div2-sec2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12025,17 +12058,17 @@ textarea.form-control-lg {
     width: 100%;
     position: relative;
   }
-  body .div2-sec2::before {
+  .div2-sec2::before {
     display: none;
   }
-  body .div2-sec2 .child-div {
+  .div2-sec2 .child-div {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
   }
-  body .div2-sec2 .child-div p {
+  .div2-sec2 .child-div p {
     width: 80%;
   }
 }
@@ -12045,10 +12078,6 @@ textarea.form-control-lg {
 
 .para2 {
   width: 63%;
-}
-
-.img00 {
-  width: 90%;
 }
 
 /*# sourceMappingURL=app.css.map */
