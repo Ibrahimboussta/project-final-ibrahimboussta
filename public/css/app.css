@@ -11991,6 +11991,10 @@ textarea.form-control-lg {
   opacity: 75%;
 }
 
+.form-control::placeholder {
+  color: white;
+}
+
 @media (max-width: 426px) {
   body {
     margin: 0;
