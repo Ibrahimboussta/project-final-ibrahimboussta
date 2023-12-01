@@ -17,6 +17,22 @@
     background-size: cover
     width: 100%
     height: 100vh
+.div1_navbar
+    width: 50vw
+
+button
+    position: relative
+    display: inline-block
+    color: white
+    background-image: linear-gradient(#363636, #363636)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 0% 100%
+    transition: background-size .5s, color .5s
+
+    &:hover
+        background-size: 100% 100%
+        color: #fff
 
     // .btn00
     //     font-size: 18px
@@ -73,7 +89,7 @@
     &::before
         content: ""
         position: absolute
-        top: 22vh
+        top: 28vh
         left: 65vw
         width: 8vw
         border-bottom: dotted dodgerblue 2px
@@ -89,7 +105,7 @@
     &::before
         content: ""
         position: absolute
-        top: 4vh
+        top: 5vh
         left: 30vw
         width: 8vw
         border-bottom: dotted dodgerblue 2px
@@ -118,9 +134,12 @@
     background-position: center
     background-size: cover
     background-repeat: no-repeat
+    background-attachment: fixed
+
     .bg1
-        background: blue
+        background: $blue
         opacity: 50%
+        height: 100vh
 
     .icon1
         border: 2px solid
@@ -142,22 +161,177 @@
     background-attachment: fixed
     height: 18rem
     .bg1
-        background-color: blue
+        background-color: $blue
         opacity: 75%
 
 .form-control
     &::placeholder
         color: white
 
+// .nav-item
+//     padding: 0 5px
+//     position: relative
+//     .Link1
+//         color: blue
+//         font-weight: 600
+//         .Link1
+//             &::after
+//                 content: ""
+//                 width: 0%
+//                 height: 5px
+//                 background: red
+//                 display: block
+//                 transition: .7s
+                // .Link1
+                //     &::hover
+                //         &::after
+                //             width: 100%
+
+@media only screen and (min-width: 1024px)
+    header
+    .nav-item
+        position: relative
+
+        &::after
+            content: ''
+            border-bottom: 2px solid blue
+            border-radius: 5px
+            width: 0
+            position: absolute
+            left: 0
+            top: 58px
+            transition: .7s
+
+        &:first-child, &:hover
+            &::after
+                width: 90%
+main
+    .col
+        position: relative
+
+    &::after
+        content: ''
+        border-bottom: 2px solid blue
+        border-radius: 5px
+        background: #000
+        width: 0
+        position: absolute
+        left: 0
+        bottom: 0
+        transition: .7s
+
+    &:card1, &:hover
+        &::after
+            width: 90%
+
+.Link1
+    border-bottom: 3px solid black
+    width: 10%
+    transition: .5s
+    &:hover
+        width: 100%
+.fot_final
+    width: 50%
+
+.div00
+    position: relative
+    .btn-primary
+        position: absolute
+        z-index: 2
+        background: #000
+        right: 0
+        top: 10rem
+
+.btn001
+    width: 50%
+
+textarea
+    resize: none
+
+.sec6
+    .div1
+        h1
+            width: 44rem
+        p
+            width: 44rem
+    .div2
+        .alldiv
+            .div1
+                width: 75rem
+            .image1
+                width: 18rem
+                height: 14rem
+                position: relative
+                img
+                    width: 100%
+                    height: 100%
+                    display: block
+                div
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    position: absolute
+                    background-color: $blue
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    opacity: 0
+                    transition: 1s
+                    &:hover
+                        opacity: 70%
+                    button
+                        width: 8rem
+                        height: 3rem
 
 @media (max-width: 426px )
     body
         margin: 0
         padding: 0
+        .div1-sec2
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            position: relative
+            &::before
+                display: none
+        .div2-sec2
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            width: 100%
+            position: relative
+            &::before
+                display: none
+            .child-div
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                width: 100%
+                p
+                    width: 80%
+        .div1_navbar
+            width: 100vw
+        .carsl
+            width: 100% !important
+        .sec2, .sec5, .sec7, .sec8, .sec9, .sec10
+        .heading2
+            width: 100vw !important
+        .container
+            .img00
+                width: 70vw
+        .fot_final
+            width: 90%
+        // footer
+        //     .wt1
+        //         width: 100% !important
         .img1
             width: 100%
             background-size: cover
-            background-position: calc( 100% - 40% )
+            background-position: calc( 100% - 45% )
         .para1
             width: 100% !important
             margin-left: 10px
@@ -186,36 +360,6 @@
             width: 100% !important
             margin-left: 10px
 
-    .div1-sec2
-        display: flex
-        align-items: center
-        .heading2
-            font-size: 20px
-            padding: 10px
-            width: 70vw
-            display: flex
-            flex-direction: column
-            align-items: center
-            .para2
-                width: 100vw
-    .div2-sec2
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: space-evenly
-        width: 100%
-        position: relative
-        &::before
-            display: none
-        .child-div
-            display: flex
-            align-items: center
-            justify-content: center
-            flex-direction: column
-            width: 100%
-            p
-                width: 80%
-
 //     &::before
 //         display: none
 
@@ -223,11 +367,18 @@
 //     &::before
 //         display: none
 
-.sec5
-    .head1
+        .sec5, .sec6, .sec7
+            .head1
+                width: 100% !important
+        .head2
+            width: 100% !important
+    .para2
+        width: 63%
+    .para3
         width: 100%
-.para2
-    width: 63%
 
-// .cnt1
-//     width: 100% 
+    // .cnt1
+    //     width: 100%
+
+    .img001
+        width: 90%
